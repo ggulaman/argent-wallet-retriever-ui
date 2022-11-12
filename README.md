@@ -1,6 +1,77 @@
-# Getting Started with Create React App
+<p align="center">
+  <a href="http://nestjs.com/" target="blank"><img src="https://logovectordl.com/wp-content/uploads/2020/11/argent-xyz-logo-vector.png" width="200" alt="Nest Logo" /></a>
+</p>
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+[circleci-image]: https://img.shields.io/circleci/build/github/nestjs/nest/master?token=abc123def456
+[circleci-url]: https://circleci.com/gh/nestjs/nest
+
+  <p align="center">Front-end service for the wallet retriever web-app</p>
+  <p align="center">This project was bootstrapped with Create React App</p>
+
+## Description
+
+This is the front-end service used by wallet retriever web-app.
+
+It fetches the back-end of the wallet retriever web-app and shows the details of a given wallet.
+
+```bash
+# GET Request
+http://localhost:4000/<ethAddress>
+
+# Response
+{"address":"0x..","ethBalance":0.0,"numberOfGuardians":0,"ERC20Balances":[]}
+```
+
+This UI uses:
+- React with Typescript
+- Material UI for the components
+- Axios to handle the GET request
+- react-testing-library and jest for testing
+
+## Installation
+```bash
+$ npm install
+```
+
+## Set Up
+#### 1. Edit `.env` with the variables accordingly, where:
+- #### REACT_APP_API_URL
+  The URL of the back-end of the wallet retriever web-app. i.e.: "http://localhost:4000"
+- #### REACT_APP_ETH_CHAIN_BROWSER
+  Etherscan browser URL for addresses. This is used to build the Links. i.e.: "https://etherscan.io/address/"
+- #### WALLET_PRIVATE_KEY
+  Any Ethereum private key.
+- #### MANAGE_GUARDIANS_SC_ADDRESS
+  The SC address of ManageGuardians. i.e.: 0xFF5A7299ff6f0fbAad9b38906b77d08c0FBdc9A7
+- #### MANAGE_GUARDIANS_SC_ABI
+  The ABI of above SC
+
+## Steps to Run it Locally
+#### 1. Install the libraries following [Installation](#nstallation)
+#### 2. Set up the .env file following [Set Up](#set-up)
+#### 3. Running the app
+```bash
+# development
+$ npm run start
+```
+
+## Test
+```bash
+# unit tests
+$ npm run test
+
+# test coverage
+$ npm run test:cov
+```
+
+## Lint
+```bash
+# lint
+$ npm run lint
+
+# test coverage
+$ npm run lint:fix
+```
 
 ## Available Scripts
 
@@ -39,8 +110,6 @@ Instead, it will copy all the configuration files and the transitive dependencie
 
 You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
 
-## Learn More
+## Stay in touch
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+- Author - [Raul Castillo Lopez](https://www.linkedin.com/in/raulcastillolopez/)
