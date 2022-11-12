@@ -1,0 +1,1 @@
+export { getEthAddressDetails } from "./api";
