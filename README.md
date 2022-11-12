@@ -35,7 +35,7 @@ $ npm install
 ## Set Up
 #### 1. Edit `.env` with the variables accordingly, where:
 - #### REACT_APP_API_URL
-  The URL of the back-end of the wallet retriever web-app. i.e.: "http://localhost:4000"
+  The URL of the wallet retriever web-app back-end. i.e.: "http://localhost:4000"
 - #### REACT_APP_ETH_CHAIN_BROWSER
   Etherscan browser URL for addresses. This is used to build the Links. i.e.: "https://etherscan.io/address/"
 
