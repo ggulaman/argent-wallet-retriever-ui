@@ -38,12 +38,6 @@ $ npm install
   The URL of the back-end of the wallet retriever web-app. i.e.: "http://localhost:4000"
 - #### REACT_APP_ETH_CHAIN_BROWSER
   Etherscan browser URL for addresses. This is used to build the Links. i.e.: "https://etherscan.io/address/"
-- #### WALLET_PRIVATE_KEY
-  Any Ethereum private key.
-- #### MANAGE_GUARDIANS_SC_ADDRESS
-  The SC address of ManageGuardians. i.e.: 0xFF5A7299ff6f0fbAad9b38906b77d08c0FBdc9A7
-- #### MANAGE_GUARDIANS_SC_ABI
-  The ABI of above SC
 
 ## Steps to Run it Locally
 #### 1. Install the libraries following [Installation](#installation)
